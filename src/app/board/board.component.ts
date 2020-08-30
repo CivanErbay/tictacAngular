@@ -24,7 +24,7 @@ export class BoardComponent implements OnInit {
   }
 
   get player() {
-    return this.xIsNext ? 'X' : '0';
+    return this.xIsNext ? 'X' : 'O';
   }
 
   makeMove(idx: number) {
