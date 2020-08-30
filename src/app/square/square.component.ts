@@ -1,21 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-square',
   template: `
-    <p>
-      square works!
-      {{randomNumber}}
-    </p>
+<button nbButton *ngIf="!value"> {{value}} </button>
   `,
-  styles: [
-]
+  styles: []
 })
 export class SquareComponent {
-//First Approach of creating a variable
+//Create Random Number Variable
   randomNumber = Math.random();
-
+//Create a Random Number Variable which gets updated each 0,5 Secs
   constructor() {
     setInterval(() => this.randomNumber= Math.random(), 500 )
   }
+
+  @Input() value: 'X' | 'O';
 }
