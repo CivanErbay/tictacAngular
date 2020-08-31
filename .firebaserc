@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tictacangular-b781c": {
+      "hosting": {
+        "tictactoe": [
+          "tictacangular-b781c"
+        ]
+      }
+    }
+  }
+}
